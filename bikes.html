@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+     <!-- BRAND NAME FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Page css -->
+    <link rel="stylesheet"
+    href="bikes.css"
+    >
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Butwal Bike Rentals</title>
+    <style>
+  .bikeAval{
+    margin-top: 10px;
+    border: 2px solid rgb(102, 92, 92);
+    width:100%;
+    text-align: center;
+    background-color: blanchedalmond;
+    height: 40px;
+    padding-top: 5px;
+  }
+
+    </style>
+  </head>
+  <body>
+    <!-- Image and text -->
+    <nav
+      class="navbar navbar-expand-lg container"
+      style="background-color: #2f4250";
+    >
+    <div class="brandtitle">
+      <a href="index.html" style="color: white;font-family: 'Anton', sans-serif;font-size: 20PX;" >BUTWAL BIKE RENTALS</a>
+
+    </div>
+      <!-- <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto" >
+          <li class="nav-item">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Add New Bike
+            </button>
+          </li>
+          </ul>
+          </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div style="background-color: rgb(47, 189, 255);height: 50px;width: 100%;text-align: center;">
+                      <h5 class="modal-title" id="exampleModalLabel" style="padding-top: 8px;">
+                        Add New Vehicle
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Name:</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter bike title">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Brand:</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Bike Brand">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Model:</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Model">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Vehicle Number</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter vehicle number">
+                    </div>
+                    <!-- <div class="form-group">
+                      <label for="exampleInputPassword1">Purchased From</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Purchased from">
+                    </div> -->
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Purchased on</label>
+                      <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Enter vehicle number">
+                    </div>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">Add a Photo</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Add New Bike
+            </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of header tag -->
+    <div class="VehInf container">
+      <h1>Vehicle Information</h1>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row" id="ads">
+        <!-- Category Card -->
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <a href="bikeinfo.html">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 1</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div></a>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span><span class="glyphicon glyphicon-envelope"></span</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 cardShadow">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 2</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 3</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row" id="ads">
+        <!-- Category Card -->
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 4</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 5</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 6</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row" id="ads">
+        <!-- Category Card -->
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 7</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 8</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Bike 9</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/bike.jpg"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row" id="ads">
+        <!-- Category Card -->
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Scooter 1</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/scooter.png"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Scooter 2</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/scooter.png"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card rounded bikecard">
+            <div class="ad-title m-auto bikeTitle">
+              <h5>Scooter 3</h5>
+            </div>
+            <div class="card-image">
+              <img
+                class="img-fluid"
+                src="images/scooter.png"
+                alt="Alternate Text"
+              />
+            </div>
+            <div class="card-body text-center bikeAval">
+              <p>Availability: <span class="indicator"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Please Ensure that Informations are up to date.</p>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- footer begins here -->
+    
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var i;
+      var j = Math.floor(Math.random() * 10);
+      var x = document.getElementsByClassName("indicator");
+      for (i = 0; i <= 12; i++) {
+        if (i % j === 0) {
+          x[i].innerHTML =
+            '<img src="images/greenicon.png" width="15px" height="15px">  <a href="#"><img src="images/pen.png" width="15px" height="15px"></a>';
+        } else {
+          x[i].innerHTML =
+            '<img src="images/redicon.png" width="15px" height="15px"> <a href="#"><img src="images/pen.png" width="15px" height="15px"></a>';
+        }
+      }
+    </script>
+  </body>
+</html>
+<!-- x[i].innerHTML = "<span>Available</span>"; -->
+<!-- x[i].innerHTML = "<span style='color:red'>Not Available</span>"; -->

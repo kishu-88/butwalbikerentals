@@ -1,0 +1,38 @@
+body {
+    background: #193041;
+  }
+  .indicator {
+    color: green;
+  }
+  .bikecard {
+    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0.2),
+      0 6px 20px 0 rgba(3, 3, 3, 0.19);
+  }
+  .bikecard:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.2),
+      0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  }
+  img {
+    background: transparent;
+  }
+  .footer{
+    font-size: 15px;
+    text-align: center;
+    width:100%;
+    background-color:#dae6f0 ;
+  }
+  .bikeTitle{
+    border: 2px solid rgb(75, 68, 68);
+    width:100%;
+    text-align: center;
+    color: black;
+    background-color: blanchedalmond;
+    text-align: none !important;
+  }
+  a:hover{
+    text-decoration: none !important;
+  }
+  .VehInf{
+      width: 100px;
+      text-align: center;
+  }
