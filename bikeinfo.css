@@ -1,0 +1,53 @@
+.VidDetails {
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,121,33,1) 3%, rgba(181,212,190,1) 86%, rgba(210,227,216,1) 100%);
+    height: 25px;
+    width: 100%;
+    margin-top: 3px;
+    text-align: center;
+    color: rgb(37, 34, 11);
+}
+.formDiv{
+    margin-top:10px;
+}
+.InputMargin {
+    margin-top: -10px;
+}
+.RentDetails {
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,121,33,1) 3%, rgba(181,212,190,1) 86%, rgba(210,227,216,1) 100%);
+    height: 25px;
+    width: 100%;
+    margin-top: 3px;
+    text-align: center;
+    color: rgb(37, 34, 11);
+}
+.AboveFooter{
+    text-align: center;
+}
+.RentHistory{
+    width: 30%;
+    background-color: rgb(187, 185, 85);
+    left:300px;
+    border: 2px solid rgb(218, 3, 3);
+    border-radius:5px;
+    height: 32px;
+    margin: auto;
+}
+.EditHistory{
+    margin-top:30px;
+    width: 60%;
+    background-color: rgb(156, 156, 147);
+    left:300px;
+    border: 2px solid rgb(10, 7, 7);
+    border-radius:5px;
+    height: 32px;
+    margin:auto;
+}
+.footer{
+    margin-top:2px;
+    font-size: 15px;
+    text-align: center;
+    width:100%;
+    background-color:#7b8c99 ;
+  }
