@@ -1,78 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <!-- BRAND NAME FONT -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-        <!-- Page css -->
-        <link rel="stylesheet"
-        href="bikes.css"
-        >
-        <!-- Bootstrap CSS -->
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous"
-        />
-    
-        <title>Butwal Bike Rentals</title>
-        <style>
-            .VeHeader{
-                text-align: center;
-                width: 100%;
-            }
-            .VeTitle{
-                font-size: 30px;
-                text-align: center;
-            }
-            .VePhoto{
-                height: 80px;
-                width: 80px;
-                background-color: cadetblue;
-                right: 0px;
-                position: relative;
-                display: block;
-            }
-        </style>
-      </head>
-</head>
-<body><div class="container">
-    <nav
-    class="navbar navbar-expand-lg container"
-    style="background-color: #2f4250";
-  >
-  <div class="brandtitle">
-    <a href="index.html" style="color: white;font-family: 'Anton', sans-serif;font-size: 20PX;" >BUTWAL BIKE RENTALS</a>
 
-  </div>
-  </nav>
-  <!-- <div class="d">
+<head>
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- BRAND NAME FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Page css -->
+    <link rel="stylesheet" href="bikeinfo.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <title>Butwal Bike Rentals</title>
+    <style>
+      .VeHeader {
+        text-align: center;
+        width: 100%;
+      }
+
+      .VeTitle {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .VePhoto {
+        height: 80px;
+        width: 80px;
+        background-color: cadetblue;
+        right: 0px;
+        position: relative;
+        display: block;
+      }
+    </style>
+  </head>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg container" style="background-color: #2f4250" ;>
+      <div class="brandtitle">
+        <a href="index.html" style="color: white;font-family: 'Anton', sans-serif;font-size: 20PX;">BUTWAL BIKE
+          RENTALS</a>
+
+      </div>
+    </nav>
+    <!-- <div class="d">
       <div class="grid">
           <div class="g-col-6 g-start-2 VeTitle">
               Vehicle 1
           </div>
         </div>
       </div> -->
-      <div class="row align-items-start" style="padding-top:10px;">
-        <div class="col-9 text-center">
-          <h3 style="padding-top:20px;">Vehicle 1</h3>
+    <div class="row align-items-start" style="padding-top:10px;">
+      <div class="col-9 text-center">
+        <h3 style="padding-top:20px;">Vehicle 1</h3>
+      </div>
+      <div class="col-3">
+        <div class="VePhoto">
+          <a href="#>"><img src="images/pen.png" height="20px" width="20px"></a>
         </div>
-        <div class="col-3">
-          <div class="VePhoto">
-            <a href="#>"><img src="images/pen.png" height="20px" width="20px"></a>
+      </div>
+      <div class="VidDetails">
+        <h6>Vehicle Details</h6>
+      </div>
+      <!-- -------------Starting vehicle form Div-------------- -->
+      <div class="formDiv">
+        <form>
+          <div class="form-group row InputMargin">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail3" placeholder="Name" autofocus>
+            </div>
           </div>
-        </div>
+          <div class="form-group row InputMargin">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Brand</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="inputPassword3" placeholder="Brand">
+            </div>
+          </div>
+          <div class="form-group row InputMargin">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Model</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail3" placeholder="Model">
+            </div>
+          </div>
+          <div class="form-group row InputMargin">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Vehicle Number:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail3" placeholder="Vehicle Number">
+            </div>
+          </div>
+          <div class="form-group row InputMargin">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">purchased on:</label>
+            <div class="col-sm-10">
+              <input type="date" class="form-control" id="inputEmail3" placeholder="Purchased on">
+            </div>
+          </div>
+          <div class="form-group row InputMargin">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">purchased from:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail3" placeholder="Purchased from">
+            </div>
+          </div>
+          <div class="form-group row InputMargin">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- ---------Rent Details------------ -->
+      <div class="RentDetails">
+        <h6>Rent Details</h6>
+      </div>
+    </div><!--  container closing div -->
+<!-- -------------Starting vehicle form Div-------------- -->
+<div class="formDiv">
+  <form>
+    <div class="form-group row InputMargin">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Customer Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" placeholder="Customer Name" autofocus>
+      </div>
+    </div>
+    <div class="form-group row InputMargin">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Phone</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="inputPassword3" placeholder="Phone">
+      </div>
+    </div>
+    <div class="form-group row InputMargin">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">License Number</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" placeholder="License Number">
+      </div>
+    </div>
+    <div class="form-group row InputMargin">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Citzen Number:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" placeholder="Citzen Number">
+      </div>
+    </div>
+    <div class="form-group row InputMargin">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Date of Rent:</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control" id="inputEmail3" placeholder="Date of Rent">
+      </div>
+    </div>
+    <div class="form-group row InputMargin">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Date of Return:</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control" id="inputEmail3" placeholder="Date of Return">
+      </div>
+    </div>
+    <div class="form-group row InputMargin">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Total Amount:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" placeholder="Total Amount">
+      </div>
+    </div>
+    <div class="form-group row InputMargin">
+      <div class="col-sm-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+  </div>
+  <div class="AboveFooter">
+    <div class="RentHistory">
+      <p>Vehicle Rent History</p>
+    </div>
+    <div class="EditHistory">
+      <p>Last modified by Admin X on YYYY/MM/DD at HH/MM/SS.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Please Ensure that Informations are up to date.</p>
+  </div>
 </div>
-   
-    
+
 </body>
+
 </html>
